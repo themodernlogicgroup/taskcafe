@@ -14,7 +14,7 @@ services:
       TASKCAFE_MIGRATE: "true"
     volumes:
       - taskcafe-uploads:/root/uploads
-      
+      - /opt/taskcafe/conf/taskcafe.toml:/root/conf/taskcafe.toml # Mounting the config file for email.
   postgres:
     image: postgres:12.3-alpine
     restart: always

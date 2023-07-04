@@ -36,7 +36,7 @@ func SendEmailInvite(cfg config.EmailConfig, invite EmailInvite) error {
 						Color:     "#7367F0", // Optional action button color
 						TextColor: "#FFFFFF",
 						Text:      "Register your account",
-						Link:      cfg.SiteURL + "https://taskcafe.net/register?confirmToken=" + invite.ConfirmToken,
+						Link:      cfg.SiteURL + "/register?confirmToken=" + invite.ConfirmToken,
 					},
 				},
 			},
